@@ -678,7 +678,7 @@ header .header-col.mid .social-icons {
 }
 
 .rtl #mainmenu li.has-child:after {
-    x position: absolute;
+    position: absolute;
     left: 25px;
 }
 
@@ -5901,7 +5901,6 @@ i.font60 {
 
 .ul-style-4 li {
     margin: 2px 0 2px 0;
-    display: ;
     font-weight: 500;
 }
 
@@ -6439,9 +6438,9 @@ header.smaller {
 }
 
 .pricing-s2.text-light .top .price,
-.pricing-s2.text-white .top .price,
+.pricing-s2.text-white .top .price
 {
-color: #ffffff;
+    color: #ffffff;
 }
 
 .pricing-s2 .top .price .currency {
@@ -11375,8 +11374,6 @@ a.img-icon-zoom {
     width: 49.9%;
 }
 
-.gallery_border {}
-
 .pf_full_width.gallery_border .item,
 .pf_full_width.gallery_border.pf_2_cols .item,
 .pf_full_width.gallery_border.pf_3_cols .item {
@@ -11437,8 +11434,6 @@ a.img-icon-zoom {
     width: 100%;
 }
 
-margin:5px;
-}
 
 /* clear fix */
 .grid:after {
@@ -11681,7 +11676,8 @@ margin:5px;
     border-color: #555;
 }
 
-.widget_tags li a:hover border-color: #eceff3;
+.widget_tags li a:hover {
+    border-color: #eceff3;
 }
 
 footer .widget {
@@ -17509,7 +17505,7 @@ a.btn-slider:hover {
     margin: 0 6px;
     display: inline-block;
     zoom: 1;
-    *display: inline;
+    display: inline;
 }
 
 .testi-slider .flex-control-paging li a {

@@ -26,7 +26,6 @@ class RegisterView(generics.CreateAPIView):
         if serializer.is_valid():
             serializer.save()
             return redirect("login")
-        print(serializer.errors["non_field_errors"][0])
         messages.error(request, serializer.errors["non_field_errors"][0])
         return render(request, self.template_name)
     
