@@ -10,6 +10,9 @@ from .serializers import (
 from rest_framework.renderers import TemplateHTMLRenderer
 from typing import Union
 
+def index(request):
+    return render(request, "index.html")
+
 class RegisterView(generics.CreateAPIView):
     serializer_class = PersonSerializer
     renderer_classes = [TemplateHTMLRenderer]
@@ -17,7 +20,7 @@ class RegisterView(generics.CreateAPIView):
 
     def get(self, request: Union[Request, HttpRequest]) -> Union[render, redirect]:
         if "username" in request.session:
-            return redirect("home")
+            return redirect("index")
         serializer = PersonSerializer()
         return render(request, self.template_name, {"serializer": serializer})
 
@@ -36,7 +39,7 @@ class LoginView(generics.RetrieveUpdateDestroyAPIView):
 
     def get(self, request: Union[Request, HttpRequest]) -> Union[render, redirect]:
         if "username" in request.session:
-            return redirect("home")
+            return redirect("index")
         return render(request, self.template_name)
 
     def post(self, request: Union[Request, HttpRequest]) -> Union[render, redirect]:
@@ -44,6 +47,6 @@ class LoginView(generics.RetrieveUpdateDestroyAPIView):
         if serializer.is_valid():
             username = serializer.data.get("username")
             request.session["username"] = username
-            return redirect("home")
+            return redirect("index")
         messages.error(request, serializer.errors["non_field_errors"][0])
         return render(request, self.template_name)
