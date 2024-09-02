@@ -10,8 +10,12 @@ from .serializers import (
 from rest_framework.renderers import TemplateHTMLRenderer
 from typing import Union
 
+
 def index(request):
-    return render(request, "index.html")
+    return render(request, 'index.html')
+
+def about(request):
+    return render(request, 'about.html')
 
 class RegisterView(generics.CreateAPIView):
     serializer_class = PersonSerializer
