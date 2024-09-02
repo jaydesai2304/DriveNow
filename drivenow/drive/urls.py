@@ -9,6 +9,9 @@ from . import views
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path("register", RegisterView.as_view(), name="register"),
+    path("index/",views.index, name="index"),
+
+    path("", RegisterView.as_view(), name="register"),
     path("login", LoginView.as_view(), name="login"),
+
 ]

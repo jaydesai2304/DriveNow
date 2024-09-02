@@ -6,7 +6,7 @@ section.call-to-action,
 a.btn-main,
 .btn-main,
 #mainmenu li li a.menu-item:hover,
-#mainmenu ul li:hover>a.menu-item,
+#mainmenu ul li:hover > a.menu-item,
 .daterangepicker td.active,
 .daterangepicker td.active:hover,
 .price-row,
@@ -41,7 +41,7 @@ a.btn-main,
 .feature-box-small-icon.style-2 .number.bg-color,
 .owl-custom-nav .btn-next:before,
 .owl-custom-nav .btn-prev:before,
-.timeline>li>.timeline-badge,
+.timeline > li > .timeline-badge,
 .de_light .de_tab.tab_style_3 .de_nav li.active span,
 .de_tab.tab_style_4 .de_nav li.active span,
 .circle,
@@ -56,7 +56,7 @@ a.btn-main,
 .widget-post .date,
 .style-2 .date-box,
 .d-card i,
-.owl-item.active>div blockquote:before,
+.owl-item.active > div blockquote:before,
 .accordion-section-title:before,
 #form_subscribe #btn-submit i,
 .bg-gradient-to-right-2,
@@ -69,13 +69,13 @@ a.btn-main,
 .fp-wrap .fpwow-icons a,
 .owl-item.active.center .feature-box-type-2,
 .testimonial-color .item:nth-child(1n) blockquote:before,
-.spinner>div,
+.spinner > div,
 .d-gallery-item .dgi-1,
 a.btn-border:hover,
 .dih-overlay,
 .widget_tags li a,
 .nav-pills .nav-link.active,
-.nav-pills .show>.nav-link,
+.nav-pills .show > .nav-link,
 #cookieConsent a.cookieConsentOK,
 .mask .cover,
 .icon-box:hover,
@@ -106,9 +106,8 @@ input[type="range"]::-webkit-slider-thumb,
 .de-submenu-profile i,
 .menu-col li a.active,
 #back-to-top {
-    background: var(--primary-color);
+  background: var(--primary-color);
 }
-
 
 .id-color,
 .date-box .day,
@@ -190,9 +189,8 @@ h5.s2,
 .social-icons i,
 a#cookit-link,
 .menu-col a i {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
-
 
 a,
 a:hover,
@@ -215,9 +213,8 @@ address.s1 span i,
 .accordion-button:not(.collapsed),
 .ul-style-2 li:before,
 .pricing-table.table-featured .bottom i {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
-
 
 .bg-color-2,
 .bg-color-secondary,
@@ -228,18 +225,18 @@ section.bg-color-secondary,
 a.btn-main.bg-color-2,
 a.btn-main.invert,
 #mainmenu li li a.menu-item:hover,
-#mainmenu ul li:hover>a.menu-item,
+#mainmenu ul li:hover > a.menu-item,
 .icon-box.invert:hover,
 #form_subscribe #btn-subscribe i.bg-color-secondary,
 #jpreBar,
 .t-circle,
 .author_list_pp i,
-.pagination>.active>a,
-.pagination>.active>span,
-.pagination>.active>a:hover,
-.pagination>.active>span:hover,
-.pagination>.active>a:focus,
-.pagination>.active>span:focus,
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus,
 .profile_avatar i,
 #btn_copy.clicked,
 #form_quick_search #btn-submit i,
@@ -252,10 +249,10 @@ a.btn-main.invert,
 a.btn-line:hover,
 .btn-line.hover,
 a.btn-line.hover,
-.de_form input[type="checkbox"]:checked+label:before,
+.de_form input[type="checkbox"]:checked + label:before,
 .coll_list_pp i,
 #form_sb #btn-submit i,
-.de-switch input[type=checkbox]:checked+label,
+.de-switch input[type="checkbox"]:checked + label,
 .de-card .de-price span,
 .de-circle-1,
 .de-color-icons i,
@@ -265,19 +262,19 @@ a.btn-line.hover,
 .pricing-table.table-featured a.btn-main,
 .page-item.active .page-link,
 .de_pricing-table .d-recommend,
-#contact_form .radio-img input[type="radio"]:checked+label,
-#contact_form .radio-img input[type="checkbox"]:checked+label {
-    background: var(--secondary-color);
+#contact_form .radio-img input[type="radio"]:checked + label,
+#contact_form .radio-img input[type="checkbox"]:checked + label {
+  background: var(--secondary-color);
 }
 
 section.dark {
-    background: rgba(var(--primary-color-rgb), .98);
+  background: rgba(var(--primary-color-rgb), 0.98);
 }
 
 .feature-box-group .d-card i,
 .accordion-section-title.active,
 .accordion.secondary .accordion-section-title:before .d-card i {
-    background: var(--secondary-color);
+  background: var(--secondary-color);
 }
 
 .bg-gradient-to-right,
@@ -288,99 +285,195 @@ h1 .label,
 a.btn-main.secondary,
 header.header-gradient,
 .ribbon.s2 {
-    background: var(--primary-color);
+  background: var(--primary-color);
 }
 
 .table-pricing thead,
 .bg-gradient-to-top-right {
-    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
 }
 
 /*.pricing-table .top,
 .pricing-s2,*/
 #subheader {
-    background: -moz-linear-gradient(180deg, rgba(var(--primary-color-rgb), 0.125) 0%, rgba(var(--primary-color-rgb), 0) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(var(--primary-color-rgb), 0.125) 0%, rgba(var(--primary-color-rgb), 0) 100%);
-    background: linear-gradient(180deg, rgba(var(--primary-color-rgb), 0.125) 0%, rgba(var(--primary-color-rgb), 0) 100%);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(var(--primary-color-rgb), 0.125) 0%,
+    rgba(var(--primary-color-rgb), 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(var(--primary-color-rgb), 0.125) 0%,
+    rgba(var(--primary-color-rgb), 0) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(var(--primary-color-rgb), 0.125) 0%,
+    rgba(var(--primary-color-rgb), 0) 100%
+  );
 }
 
 .d-card i,
 .d-card:hover i {
-    background: -moz-linear-gradient(180deg, rgba(var(--primary-color-rgb), 1) 20%, rgba(var(--primary-color-rgb), 0) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(var(--primary-color-rgb), 1) 20%, rgba(var(--primary-color-rgb), 0) 100%);
-    background: linear-gradient(180deg, rgba(var(--primary-color-rgb), 1) 20%, rgba(var(--primary-color-rgb), 0) 100%);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(var(--primary-color-rgb), 1) 20%,
+    rgba(var(--primary-color-rgb), 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(var(--primary-color-rgb), 1) 20%,
+    rgba(var(--primary-color-rgb), 0) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(var(--primary-color-rgb), 1) 20%,
+    rgba(var(--primary-color-rgb), 0) 100%
+  );
 }
 
 #preloader {
-    background-image: linear-gradient(to top right, var(--primary-color), var(--secondary-color));
+  background-image: linear-gradient(
+    to top right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
 }
 
 .overlay-gradient {
-    background: -moz-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.9) 0%, rgba(var(--primary-color-2-rgb), 0.9) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.9) 0%, rgba(var(--primary-color-2-rgb), 0.9) 100%);
-    background: linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.9) 0%, rgba(var(--primary-color-2-rgb), 0.9) 100%);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.9) 0%,
+    rgba(var(--primary-color-2-rgb), 0.9) 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.9) 0%,
+    rgba(var(--primary-color-2-rgb), 0.9) 100%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.9) 0%,
+    rgba(var(--primary-color-2-rgb), 0.9) 100%
+  );
 }
 
 .overlay-gradient.t80 {
-    background: -moz-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.8) 0%, rgba(var(--primary-color-2-rgb), 0.8) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.8) 0%, rgba(var(--primary-color-2-rgb), 0.8) 100%);
-    background: linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.8) 0%, rgba(var(--primary-color-2-rgb), 0.8) 100%);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.8) 0%,
+    rgba(var(--primary-color-2-rgb), 0.8) 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.8) 0%,
+    rgba(var(--primary-color-2-rgb), 0.8) 100%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.8) 0%,
+    rgba(var(--primary-color-2-rgb), 0.8) 100%
+  );
 }
 
 .overlay-gradient.t70 {
-    background: -moz-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.7) 0%, rgba(var(--primary-color-2-rgb), 0.7) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.7) 0%, rgba(var(--primary-color-2-rgb), 0.7) 100%);
-    background: linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.7) 0%, rgba(var(--primary-color-2-rgb), 0.7) 100%);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.7) 0%,
+    rgba(var(--primary-color-2-rgb), 0.7) 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.7) 0%,
+    rgba(var(--primary-color-2-rgb), 0.7) 100%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.7) 0%,
+    rgba(var(--primary-color-2-rgb), 0.7) 100%
+  );
 }
 
 .overlay-gradient.t60 {
-    background: -moz-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.6) 0%, rgba(var(--primary-color-2-rgb), 0.6) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.6) 0%, rgba(var(--primary-color-2-rgb), 0.6) 100%);
-    background: linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.6) 0%, rgba(var(--primary-color-2-rgb), 0.6) 100%);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.6) 0%,
+    rgba(var(--primary-color-2-rgb), 0.6) 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.6) 0%,
+    rgba(var(--primary-color-2-rgb), 0.6) 100%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.6) 0%,
+    rgba(var(--primary-color-2-rgb), 0.6) 100%
+  );
 }
 
 .overlay-gradient.t50 {
-    background: -moz-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.5) 0%, rgba(var(--primary-color-2-rgb), 0.5) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.5) 0%, rgba(var(--primary-color-2-rgb), 0.5) 100%);
-    background: linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.5) 0%, rgba(var(--primary-color-2-rgb), 0.5) 100%);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.5) 0%,
+    rgba(var(--primary-color-2-rgb), 0.5) 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.5) 0%,
+    rgba(var(--primary-color-2-rgb), 0.5) 100%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.5) 0%,
+    rgba(var(--primary-color-2-rgb), 0.5) 100%
+  );
 }
 
 .all-timelines::before {
-    background: rgba(var(--secondary-color-rgb), .3);
+  background: rgba(var(--secondary-color-rgb), 0.3);
 }
 
 .pricing-table .bottom i {
-    background: rgba(var(--secondary-color-rgb), .2);
+  background: rgba(var(--secondary-color-rgb), 0.2);
 }
 
 #topbar {
-    background: rgba(var(--primary-color-rgb), .1);
+  background: rgba(var(--primary-color-rgb), 0.1);
 }
 
 .activity-list li:after {
-    color: rgba(var(--secondary-color-rgb), 1);
+  color: rgba(var(--secondary-color-rgb), 1);
 }
 
-.item_info_counts>div,
+.item_info_counts > div,
 .de_table .tr .td:nth-child(2) span,
 .activity-filter i,
+<<<<<<< HEAD
 .accordion-button:not(.collapsed)
 {
 background: rgba(var(--secondary-color-rgb), .1);
+=======
+.accordion-button:not(.collapsed) {
+  background: rgba(var(--secondary-color-rgb), 0.1);
+>>>>>>> 3c758daef34552d27080c0a233f92a39cb9c23df
 }
 
 .activity-list li {
-    background: rgba(var(--secondary-color-rgb), .07);
+  background: rgba(var(--secondary-color-rgb), 0.07);
 }
-
 
 a.btn-border.btn-invert,
 .small-border,
 .icon-box,
 #slider-carousel .owl-thumb-item.active img,
-.de_form input[type="checkbox"]+label:before,
+.de_form input[type="checkbox"] + label:before,
 .profile_avatar img {
-    border-color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .de_countdown,
@@ -388,94 +481,105 @@ a.btn-border.btn-invert,
 .de_tab.tab_methods .de_nav li.active span,
 .dark-scheme .pagination li.active a,
 .de-circle-2 {
-    border-color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 
 .author_list_pp:hover img {
-    -webkit-box-shadow: 0px 0px 0px 2px rgba(var(--secondary-color-rgb), 1);
-    -moz-box-shadow: 0px 0px 0px 2px rgba(var(--secondary-color-rgb), 1);
-    box-shadow: 0px 0px 0px 2px rgba(var(--secondary-color-rgb), 1);
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(var(--secondary-color-rgb), 1);
+  -moz-box-shadow: 0px 0px 0px 2px rgba(var(--secondary-color-rgb), 1);
+  box-shadow: 0px 0px 0px 2px rgba(var(--secondary-color-rgb), 1);
 }
 
-.form-border input[type=text]:focus,
+.form-border input[type="text"]:focus,
 .form-border textarea:focus,
-.form-underline input[type=email]:focus,
-.form-border input[type=date]:focus,
+.form-underline input[type="email"]:focus,
+.form-border input[type="date"]:focus,
 .form-border select:focus,
 #quick_search:hover,
 .items_filter .dropdown:hover {
-    webkit-box-shadow: 0px 0px 0px 4px rgba(var(--primary-color-rgb), .3);
-    -moz-box-shadow: 0px 0px 0px 4px rgba(var(--primary-color-rgb), .3);
-    box-shadow: 0px 0px 0px 4px rgba(var(--primary-color-rgb), .3);
+  webkit-box-shadow: 0px 0px 0px 4px rgba(var(--primary-color-rgb), 0.3);
+  -moz-box-shadow: 0px 0px 0px 4px rgba(var(--primary-color-rgb), 0.3);
+  box-shadow: 0px 0px 0px 4px rgba(var(--primary-color-rgb), 0.3);
 }
 
 .container-timeline ul lifblockquote {
-    border-left-color: var(--primary-color);
+  border-left-color: var(--primary-color);
 }
 
 .de_tab.tab_simple .de_nav li.active span {
-    border-bottom-color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
 }
 
 header #mainmenu a.menu-item span,
 header.transparent #mainmenu a.menu-item span,
 .de-grey #subheader h1 {
-    border-bottom-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
 }
 
 .header-light #quick_search {
-    background: rgba(var(--primary-color-rgb), .1);
+  background: rgba(var(--primary-color-rgb), 0.1);
 }
 
 h5.s2,
 .box-highlight {
-    background: rgba(var(--primary-color-rgb), .2);
+  background: rgba(var(--primary-color-rgb), 0.2);
 }
 
 .container-timeline ul li {
-    border-top-color: var(--secondary-color);
+  border-top-color: var(--secondary-color);
 }
 
 .line-preloader .p-line:nth-child(1) {
-    border-right-color: var(--secondary-color);
-    border-bottom-color: var(--secondary-color);
+  border-right-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
 }
 
 .line-preloader .p-line:nth-child(2) {
-    border-left-color: var(--secondary-color);
-    border-top-color: var(--secondary-color);
+  border-left-color: var(--secondary-color);
+  border-top-color: var(--secondary-color);
 }
 
 .line-preloader .p-line:nth-child(3) {
-    border-right-color: var(--secondary-color);
-    border-top-color: var(--secondary-color);
+  border-right-color: var(--secondary-color);
+  border-top-color: var(--secondary-color);
 }
 
 .de-event-item .d-shadow {
-    border-color: transparent transparent transparent var(--secondary-color);
-    ;
+  border-color: transparent transparent transparent var(--secondary-color);
 }
 
 .preloader1 {
-    width: 60px;
-    border-top-color: rgba(var(--primary-color-rgb), 0.65);
-    border-bottom-color: rgba(var(--primary-color-rgb), 0.1);
-    border-left-color: rgba(var(--primary-color-rgb), 0.1);
-    border-right-color: rgba(var(--primary-color-rgb), 0.1);
+  width: 60px;
+  border-top-color: rgba(var(--primary-color-rgb), 0.65);
+  border-bottom-color: rgba(var(--primary-color-rgb), 0.1);
+  border-left-color: rgba(var(--primary-color-rgb), 0.1);
+  border-right-color: rgba(var(--primary-color-rgb), 0.1);
 }
 
 .color-gradient,
 .de_count h3 {
-    background: -webkit-linear-gradient(to right, var(--primary-color) 0%, var(--secondary-color) 100%);
-    background: -moz-linear-gradient(to right, var(--primary-color) 0%, var(--secondary-color) 100%);
-    background: linear-gradient(to right, var(--primary-color) 0%, var(--secondary-color) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(
+    to right,
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
+  );
+  background: -moz-linear-gradient(
+    to right,
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
+  );
+  background: linear-gradient(
+    to right,
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media only screen and (max-width: 992px) {
-    .table-pricing tbody tr th {
-        background: var(--primary-color);
-    }
-
+  .table-pricing tbody tr th {
+    background: var(--primary-color);
+  }
 }
+    
