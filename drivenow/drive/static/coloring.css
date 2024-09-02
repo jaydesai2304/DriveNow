@@ -364,7 +364,7 @@ header.header-gradient,
 .item_info_counts>div,
 .de_table .tr .td:nth-child(2) span,
 .activity-filter i,
-.accordion-button:not(.collapsed),
+.accordion-button:not(.collapsed)
 {
 background: rgba(var(--secondary-color-rgb), .1);
 }
