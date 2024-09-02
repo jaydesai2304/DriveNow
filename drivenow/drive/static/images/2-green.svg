@@ -65,7 +65,7 @@
      id="layer1"
      transform="translate(0,-652.36216)">
     <path
-       style="opacity:1;fill:#20D760;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:#00bdeb;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 124.49999,684.28992 0,50.1445 -124.499985,0 0,285.99998 399.999995,0 0,-285.99998 -124.5,0 0,-50.1445 -150,0 z m 25,25 101,0 0,25.1445 -101,0 z m -124.499985,50.1445 31.5,0 0,100 286.999995,0 0,-100 31.5,0 0,235.99997 -349.999995,0 z m 56.5,0 236.999995,0 0,75 -236.999995,0 z M 187.5,784.94032 l 0,25 25,0 0,-25 z"
        id="briefcase"
        inkscape:connector-curvature="0"
