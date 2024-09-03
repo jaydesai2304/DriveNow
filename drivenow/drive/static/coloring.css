@@ -453,14 +453,8 @@ header.header-gradient,
 .item_info_counts > div,
 .de_table .tr .td:nth-child(2) span,
 .activity-filter i,
-<<<<<<< HEAD
-.accordion-button:not(.collapsed)
-{
-background: rgba(var(--secondary-color-rgb), .1);
-=======
 .accordion-button:not(.collapsed) {
   background: rgba(var(--secondary-color-rgb), 0.1);
->>>>>>> 3c758daef34552d27080c0a233f92a39cb9c23df
 }
 
 .activity-list li {

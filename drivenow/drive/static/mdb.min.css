@@ -16,7 +16,7 @@
  *   Contact: office@mdbootstrap.com
  * 
  */
-:root {
+ :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -342,10 +342,7 @@ button {
 [type="reset"]:not(:disabled),
 [type="submit"]:not(:disabled),
 button:not(:disabled) {
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 15px;
-    letter-spacing: 2px;
+  cursor: pointer;
 }
 ::-moz-focus-inner {
   padding: 0;
@@ -1953,15 +1950,15 @@ progress {
   border-color: #d8c2e6;
 }
 .table-success {
-    --bs-table-bg: #ccf1db;
-    --bs-table-striped-bg: #c2e5d0;
-    --bs-table-striped-color: #000;
-    --bs-table-active-bg: #b8d9c5;
-    --bs-table-active-color: #000;
-    --bs-table-hover-bg: #bddfcb;
-    --bs-table-hover-color: #000;
-    color: #000;
-    border-color: #b8d9c5
+  --bs-table-bg: #ccf1db;
+  --bs-table-striped-bg: #c2e5d0;
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: #b8d9c5;
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: #bddfcb;
+  --bs-table-hover-color: #000;
+  color: #000;
+  border-color: #b8d9c5;
 }
 .table-info {
   --bs-table-bg: #d7f2fb;
