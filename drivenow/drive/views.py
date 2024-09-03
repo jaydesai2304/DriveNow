@@ -17,6 +17,9 @@ def index(request):
 def about(request):
     return render(request, 'about.html')
 
+def contact(request):
+    return render(request, 'contact.html')
+
 class RegisterView(generics.CreateAPIView):
     serializer_class = PersonSerializer
     renderer_classes = [TemplateHTMLRenderer]

@@ -10,8 +10,7 @@
     <meta content="Rentaly - Multipurpose Vehicle Car Rental Website Template" name="description">
     <meta content="" name="keywords">
     <meta content="" name="author">
-    <!-- CSS Files
-    ================================================== -->
+    <!-- CSS Files -->
     <link href="{% static 'bootstrap.min.css' %}" rel="stylesheet" type="text/css" id="bootstrap">
     <link href="{% static 'mdb.min.css' %}" rel="stylesheet" type="text/css" id="mdb">
     <link href="{% static 'plugins.css' %}" rel="stylesheet" type="text/css">
@@ -50,7 +49,7 @@
                                     <li><a class="menu-item" href="{% url 'about' %}">About Us</a></li>
                                     <li><a class="menu-item" href="cars.html">Cars</a></li>
                                     <li><a class="menu-item" href="quick-booking.html">Booking</a></li>
-                                    <li><a class="menu-item" href="contact.html">Contact</a></li>
+                                    <li><a class="menu-item" href="{% url 'contact' %}">Contact</a></li>
                                     <li><a class="menu-item" href="account-dashboard.html">My Account</a></li>
                                 </ul>
                             </div>
@@ -435,31 +434,11 @@
                     </div>
                 </div>
             </div>
-            <div class="subfooter">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="de-flex">
-                                <div class="de-flex-col">
-                                    <a href="index.html">
-                                        Copyright 2024 - Rentaly by Designesia
-                                    </a>
-                                </div>
-                                <ul class="menu-simple">
-                                    <li><a href="#">Terms &amp; Conditions</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </footer>
         <!-- footer close -->
     </div>
 
-    <!-- Javascript Files
-    ================================================== -->
+    <!-- Javascript Files -->
     <script src="{% static 'js/plugins.js' %}"></script>
     <script src="{% static 'js/designesia.js' %}"></script>
 
