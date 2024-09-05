@@ -20,6 +20,9 @@ def about(request):
 def contact(request):
     return render(request, 'contact.html')
 
+def cars(request):
+    return render(request, 'cars.html')
+
 class RegisterView(generics.CreateAPIView):
     serializer_class = PersonSerializer
     renderer_classes = [TemplateHTMLRenderer]

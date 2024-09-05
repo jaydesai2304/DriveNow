@@ -23,11 +23,6 @@
 
 <body>
     <div id="wrapper">
-
-        <!-- page preloader begin -->
-        <div id="de-preloader"></div>
-        <!-- page preloader close -->
-
         <!-- header begin -->
         <header class="transparent scroll-light has-topbar">
             <div class="container">
@@ -50,7 +45,7 @@
                                 <ul id="mainmenu">
                                     <li><a class="menu-item" href="{% url 'index' %}">Home</a></li>
                                     <li><a class="menu-item" href="{% url 'about' %}">About Us</a></li>
-                                    <li><a class="menu-item" href="cars.html">Cars</a></li>
+                                    <li><a class="menu-item" href="{% url 'cars' %}">Cars</a></li>
                                     <li><a class="menu-item" href="quick-booking.html">Booking</a></li>
                                     <li><a class="menu-item" href="{% url 'contact' %}">Contact</a></li>
                                     <li><a class="menu-item" href="account-dashboard.html">My Account</a></li>
@@ -160,14 +155,10 @@
                                             href="mailto:contact@example.com">contact@example.com</a></span>
                                 </address>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
-
             </section>
-
         </div>
         <!-- content close -->
 
@@ -195,8 +186,6 @@
                                 <span><i class="id-color fa fa-phone fa-lg"></i>+1 333 9296</span>
                                 <span><i class="id-color fa fa-envelope-o fa-lg"></i><a
                                         href="mailto:contact@example.com">contact@example.com</a></span>
-                                <span><i class="id-color fa fa-file-pdf-o fa-lg"></i><a href="#">Download
-                                        Brochure</a></span>
                             </address>
                         </div>
                     </div>
@@ -240,6 +229,6 @@
     <script src="{% static 'js/plugins.js' %}"></script>
     <script src="{% static 'js/designesia.js' %}"></script>
     <script src="{% static 'js/form.js' %}"></script>
-</body>
 
+</body>
 </html>
