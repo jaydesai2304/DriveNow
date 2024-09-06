@@ -10,3 +10,9 @@ class Person(models.Model):
 
     def __str__(self):
         return f"{self.username}"
+
+class Contact(models.Model):
+    fname = models.CharField(max_length=100)
+    email = models.EmailField(max_length=254)
+    phone = models.CharField(max_length=15)
+    message =models.CharField(max_length=100)

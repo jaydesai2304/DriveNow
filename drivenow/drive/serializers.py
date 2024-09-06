@@ -1,7 +1,7 @@
 from rest_framework import serializers
 
 from django.core.exceptions import ValidationError
-from .models import Person
+from .models import Person, Contact
 
 
 class PersonSerializer(serializers.ModelSerializer):
@@ -40,3 +40,13 @@ class LoginSerializer(serializers.ModelSerializer):
         if not user:
             raise serializers.ValidationError("Invalid username or password")
         return data
+    
+class ContactSerializers(serializers.ModelSerializer):
+
+    class Meta:
+        model = Contact
+        fields = "__all__"
+    
+        def create(self, validated_data):
+            user = Contact.objects.create(**validated_data)
+            return user
