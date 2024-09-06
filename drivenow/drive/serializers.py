@@ -27,7 +27,7 @@ class PersonSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         return super().create(validated_data)
     
-class Loginserializer(serializers.ModelSerializer):
+class LoginSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Person
@@ -36,9 +36,7 @@ class Loginserializer(serializers.ModelSerializer):
     def validate(self, data):
         username = data.get("username")
         password = data.get("password")
-        person_details = Person.objects.filter(
-            username=username, password=password
-        ).first()
-        if not person_details:
-            raise ValidationError("Invalid Username or Password")
+        user = Person.objects.filter(username=username, password=password).first()
+        if not user:
+            raise serializers.ValidationError("Invalid username or password")
         return data

@@ -47,14 +47,14 @@
                                     <li><a class="menu-item" href="{% url 'index' %}">Home</a></li>
                                     <li><a class="menu-item" href="{% url 'about' %}">About Us</a></li>
                                     <li><a class="menu-item" href="{% url 'cars' %}">Cars</a></li>
-                                    <li><a class="menu-item" href="quick-booking.html">Booking</a></li>
+                                    <li><a class="menu-item" href="{% url 'quick-booking' %}">Booking</a></li>
                                     <li><a class="menu-item" href="{% url 'contact' %}">Contact</a></li>
                                     <li><a class="menu-item" href="account-dashboard.html">My Account</a></li>
                                 </ul>
                             </div>
                             <div class="de-flex-col">
                                 <div class="menu_side_area">
-                                    <a href="login.html" class="btn-main">Sign In</a>
+                                    <a href="{% url 'login' %}" class="btn-main">Login</a>
                                     <span id="menu-btn"></span>
                                 </div>
                             </div>
