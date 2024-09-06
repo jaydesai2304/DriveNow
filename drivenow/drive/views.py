@@ -5,7 +5,7 @@ from rest_framework import generics
 from rest_framework.request import Request
 from .serializers import (
     PersonSerializer,
-    Loginserializer
+    LoginSerializer
 )
 from rest_framework.renderers import TemplateHTMLRenderer
 from typing import Union
@@ -22,6 +22,10 @@ def contact(request):
 
 def cars(request):
     return render(request, 'cars.html')
+
+def quick_booking(request):
+    return render(request, 'quick-booking.html')
+
 
 class RegisterView(generics.CreateAPIView):
     serializer_class = PersonSerializer
@@ -42,21 +46,21 @@ class RegisterView(generics.CreateAPIView):
         messages.error(request, serializer.errors["non_field_errors"][0])
         return render(request, self.template_name)
     
-class LoginView(generics.RetrieveUpdateDestroyAPIView):
-    serializer_class = Loginserializer
+class LoginView(generics.GenericAPIView):
+    serializer_class = LoginSerializer
     renderer_classes = [TemplateHTMLRenderer]
     template_name = "login.html"
 
-    def get(self, request: Union[Request, HttpRequest]) -> Union[render, redirect]:
-        if "username" in request.session:
+    def get(self, request, *args, **kwargs):
+        if "username" not in request.session:
             return redirect("index")
         return render(request, self.template_name)
 
-    def post(self, request: Union[Request, HttpRequest]) -> Union[render, redirect]:
-        serializer = Loginserializer(data=request.data)
+    def post(self, request, *args, **kwargs):
+        serializer = LoginSerializer(data=request.data)
         if serializer.is_valid():
-            username = serializer.data.get("username")
-            request.session["username"] = username
+            user = serializer.data.get("username")
+            request.session["username"] = user
             return redirect("index")
         messages.error(request, serializer.errors["non_field_errors"][0])
-        return render(request, self.template_name)
+        return render(request, self.template_name, {"serializer": serializer})
