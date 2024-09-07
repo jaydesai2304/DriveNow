@@ -14,6 +14,10 @@ urlpatterns = [
     path("about/", views.about, name="about"),
     path("cars/", views.cars, name="cars"),
     path("quick-booking/", views.quick_booking, name="quick-booking"),
+    path("profile/", views.profile, name="profile"),
+    path("dashboard/", views.dashboard, name="dashboard"),
+    path("orders/", views.orders, name="orders"),
+    path("favorite/", views.favorite, name="favorite"),
 
     path("", RegisterView.as_view(), name="register"),
     path("login", LoginView.as_view(), name="login"),

@@ -24,6 +24,17 @@ def cars(request):
 def quick_booking(request):
     return render(request, 'quick-booking.html')
 
+def profile(request):
+    return render(request, 'account-profile.html')
+
+def dashboard(request):
+    return render(request, 'account-dashboard.html')
+
+def orders(request):
+    return render(request, 'account-booking.html')
+
+def favorite(request):
+    return render(request, 'account-favorite.html')
 
 class RegisterView(generics.CreateAPIView):
     serializer_class = PersonSerializer
