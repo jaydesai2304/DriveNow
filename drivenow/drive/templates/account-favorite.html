@@ -47,12 +47,12 @@
                             </div>
                             <div class="de-flex-col header-col-mid">
                                 <ul id="mainmenu">
-                                    <li><a class="menu-item" href="index.html">Home</a></li>
-                                    <li><a class="menu-item" href="about.html">About Us</a></li>
-                                    <li><a class="menu-item" href="cars.html">Cars</a></li>
-                                    <li><a class="menu-item" href="quick-booking.html">Booking</a></li>
-                                    <li><a class="menu-item" href="contact.html">Contact</a></li>
-                                    <li><a class="menu-item" href="account-dashboard.html">My Account</a></li>
+                                    <li><a class="menu-item" href="{% url 'index' %}">Home</a></li>
+                                    <li><a class="menu-item" href="{% url 'about' %}">About Us</a></li>
+                                    <li><a class="menu-item" href="{% url 'cars' %}">Cars</a></li>
+                                    <li><a class="menu-item" href="{% url 'quick-booking' %}">Booking</a></li>
+                                    <li><a class="menu-item" href="{% url 'contact' %}">Contact</a></li>
+                                    <li><a class="menu-item" href="{% url 'dashboard' %}">My Account</a></li>
                                 </ul>
                             </div>
                             <div class="de-flex-col">
@@ -62,8 +62,6 @@
                                         <span id="de-click-menu-profile" class="de-menu-profile">
                                             <img src="{% static 'images/1.jpg' %}" class="img-fluid" alt="">
                                         </span>
-
-
 
                                         <div id="de-submenu-profile" class="de-submenu">
                                             <div class="d-name">
@@ -234,8 +232,6 @@
                     </div>
                 </div>
             </section>
-
-
         </div>
         <!-- content close -->
 
@@ -300,7 +296,6 @@
             </div>
         </footer>
         <!-- footer close -->
-
     </div>
 
     <!-- Javascript Files
@@ -309,5 +304,4 @@
     <script src="{% static 'js/designesia.js' %}"></script>
 
 </body>
-
 </html>
