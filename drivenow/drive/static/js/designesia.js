@@ -1420,7 +1420,6 @@
                     jQuery("#bootstrap-reboot").attr("href", 'css/bootstrap-reboot.rtl.min.css');
                     jQuery("#mdb").attr("href", 'css/mdb.rtl.min.css');
                     jQuery('html').attr("dir", "rtl");
-                    jQuery(this).find(".sc-val").text('Click to Disable');
                     break;
                 case 2:
                     jQuery("body").removeClass('rtl');
@@ -1429,7 +1428,6 @@
                     jQuery("#bootstrap-reboot").attr("href", 'css/bootstrap-reboot.min.css');
                     jQuery("#mdb").attr("href", 'css/mdb.min.css');
                     jQuery('html').attr("dir", "ltr");
-                    jQuery(this).find(".sc-val").text('Click to Enable');
                     break;
             }
             iteration++;
