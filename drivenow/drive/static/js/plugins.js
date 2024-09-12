@@ -1,4 +1,3 @@
-/*! jQuery v3.6.0 | (c) OpenJS Foundation and other contributors | jquery.org/license */
 !(function (e, t) {
   "use strict";
   "object" == typeof module && "object" == typeof module.exports
@@ -42268,14 +42267,7 @@ function fillInAddress() {
   return (t.fn.select2.amd = s), u;
 });
 
-/* sticky */
-/*!
- * Stickyfill -- `position: sticky` polyfill for  IE
- * v. 1.1.2 | https://github.com/wilddeer/stickyfill
- * Copyright Oleg Korsunsky | http://wd.dizaina.net/
- *
- * MIT License
- */ !(function (a, b) {
+!(function (a, b) {
   function c() {
     y = D = z = A = B = C = K;
   }

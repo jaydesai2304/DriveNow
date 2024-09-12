@@ -1,6 +1,3 @@
-/* --------------------------------------------------
- * Â© Copyright 2024 - Rentaly by Designesia
- * --------------------------------------------------*/
 (function ($) {
     'use strict';
 
@@ -95,7 +92,6 @@
                 verticalFit: true,
                 titleSrc: function (item) {
                     return item.el.attr('title');
-                    //return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
                 }
             },
             gallery: {
@@ -125,7 +121,6 @@
 
             zoom: {
                 enabled: true, // By default it's false, so don't forget to enable it
-
                 duration: 300, // duration of the effect, in milliseconds
                 easing: 'ease-in-out', // CSS transition easing function
 
@@ -178,7 +173,6 @@
                 verticalFit: true,
                 titleSrc: function (item) {
                     return item.el.attr('title');
-                    //return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
                 }
             },
             gallery: {
@@ -717,18 +711,6 @@
             return false;
         });
     }
-    /* --------------------------------------------------
-     * plugin | fitvids
-     * --------------------------------------------------*/
-    /*!
-     * FitVids 1.0
-     *
-     * Copyright 2011, Chris Coyier - http://css-tricks.com + Dave Rupert - http://daverupert.com
-     * Credit to Thierry Koblentz - http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/
-     * Released under the WTFPL license - http://sam.zoy.org/wtfpl/
-     *
-     * Date: Thu Sept 01 18:00:00 2011 -0500
-     */
     ! function (a) {
         a.fn.fitVids = function (b) {
             var c = {
@@ -781,17 +763,7 @@
             }, 700);
         });
     };
-    /* --------------------------------------------------
-     * plugin | scroll to
-     * --------------------------------------------------*/
-    /*!
-     * jquery.scrollto.js 0.0.1 - https://github.com/yckart/jquery.scrollto.js
-     * Scroll smooth to any element in your DOM.
-     *
-     * Copyright (c) 2012 Yannick Albert (http://yckart.com)
-     * Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php).
-     * 2013/02/17
-     **/
+
     $.scrollTo = $.fn.scrollTo = function (x, y, options) {
         if (!(this instanceof $)) return $.fn.scrollTo.apply($('html, body'), arguments);
 
@@ -941,11 +913,9 @@
         // --------------------------------------------------
         jQuery('.de_review').find('.de_tab_content > div').hide();
         jQuery('.de_review').find('.de_tab_content > div:first').show();
-        //jQuery('.de_review').find('.de_nav li').fadeTo(150,.5);
         jQuery('.de_review').find('.de_nav li:first').fadeTo(150, 1);
         jQuery('.de_nav li').on("click", function () {
             jQuery(this).parent().find('li').removeClass("active");
-            //jQuery(this).parent().find('li').fadeTo(150,.5);
             jQuery(this).addClass("active");
             jQuery(this).fadeTo(150, 1);
             jQuery(this).parent().parent().find('.de_tab_content > div').hide();
@@ -1325,7 +1295,6 @@
             img.on('load', function () {
                 var w = jQuery(this).css("width");
                 var h = jQuery(this).css("height");
-                //nh = (h.substring(0, h.length - 2)/2)-48;
                 jQuery(this).parent().css("height", h);
             }).each(function () {
                 if (this.complete) $(this).load();
@@ -1344,8 +1313,6 @@
             var picheight = jQuery(this).find("img").css("height");
             var newheight;
             newheight = (picheight.substring(0, picheight.length - 2) / 2) - 10;
-            //alert(newheight);
-            //jQuery(this).parent().find(".pf_text").stop(true).animate({'margin-top': newheight},200,'easeOutCubic');
             jQuery(this).parent().find(".pf_text").css('margin-top', newheight);
             jQuery(this).parent().find(".pf_text").stop(true).animate({
                 'opacity': '1'
@@ -1366,7 +1333,6 @@
             var newheight;
             var picheight = jQuery(this).find("img").css("height");
             newheight = (picheight.substring(0, picheight.length - 2) / 2) - 10;
-            //jQuery(this).parent().find(".pf_text").stop(true).animate({'margin-top': newheight - 30},200,'easeOutCubic');
             jQuery(this).parent().find(".pf_text").stop(true).animate({
                 'opacity': '0'
             }, 400, 'easeOutCubic');
@@ -1394,17 +1360,6 @@
     }
     // de_init end //
 
-    // rtl begin //
-    if (rtl_mode == "on") {
-        jQuery("body").addClass('rtl');
-        jQuery("#bootstrap").attr("href", 'css/bootstrap.rtl.min.css');
-        jQuery("#bootstrap-grid").attr("href", 'css/bootstrap-grid.rtl.min.css');
-        jQuery("#bootstrap-reboot").attr("href", 'css/bootstrap-reboot.rtl.min.css');
-        jQuery("#mdb").attr("href", 'css/mdb.rtl.min.css');
-        jQuery('html').attr("dir", "rtl")
-    };
-    // rtl end // 
-
     if (preloader == "off") {
         jQuery("#de-preloader").hide();
     }
@@ -1420,6 +1375,7 @@
                     jQuery("#bootstrap-reboot").attr("href", 'css/bootstrap-reboot.rtl.min.css');
                     jQuery("#mdb").attr("href", 'css/mdb.rtl.min.css');
                     jQuery('html').attr("dir", "rtl");
+                    jQuery(this).find(".sc-val").text('Click to Disable');
                     break;
                 case 2:
                     jQuery("body").removeClass('rtl');
@@ -1428,6 +1384,7 @@
                     jQuery("#bootstrap-reboot").attr("href", 'css/bootstrap-reboot.min.css');
                     jQuery("#mdb").attr("href", 'css/mdb.min.css');
                     jQuery('html').attr("dir", "ltr");
+                    jQuery(this).find(".sc-val").text('Click to Enable');
                     break;
             }
             iteration++;
@@ -1516,21 +1473,21 @@
     // preloader
     // --------------------------------------------------
 
-    function copyText(element) {
-        var $copyText = jQuery(element).text();
-        var button = jQuery('#btn_copy');
-        navigator.clipboard.writeText($copyText).then(function () {
-            var originalText = button.text();
-            button.html('Copied!');
-            button.addClass('clicked');
-            setTimeout(function () {
-                button.html(originalText);
-                button.removeClass('clicked');
-            }, 750);
-        }, function () {
-            button.html('Error');
-        });
-    }
+    // function copyText(element) {
+    //     var $copyText = jQuery(element).text();
+    //     var button = jQuery('#btn_copy');
+    //     navigator.clipboard.writeText($copyText).then(function () {
+    //         var originalText = button.text();
+    //         button.html('Copied!');
+    //         button.addClass('clicked');
+    //         setTimeout(function () {
+    //             button.html(originalText);
+    //             button.removeClass('clicked');
+    //         }, 750);
+    //     }, function () {
+    //         button.html('Error');
+    //     });
+    // }
 
     // --------------------------------------------------
     // custom dropdown
@@ -1587,10 +1544,6 @@
         $('.fa-reddit').on("click", function () { window.open('http://www.reddit.com/submit?url=' + url, '_blank'); });
         $('.fa-linkedin').on("click", function () { window.open('https://www.linkedin.com/shareArticle?mini=true&url=' + url, '_blank'); });
         $('.fa-pinterest').on("click", function () { window.open('https://www.pinterest.com/pin/create/button/?url=' + url, '_blank'); });
-        $('.fa-stumbleupon').on("click", function () { window.open('http://www.stumbleupon.com/submit?url=' + url, '_blank'); });
-        $('.fa-delicious').on("click", function () { window.open('https://delicious.com/save?v=5&noui&jump=close&url=' + url, '_blank'); });
-        $('.fa-envelope').on("click", function () { window.open('mailto:?subject=Share With Friends&body=' + url, '_blank'); });
-
     }
 
     /* --------------------------------------------------
@@ -1747,10 +1700,6 @@
         // --------------------------------------------------
         var $doc_height = jQuery(window).innerHeight();
         jQuery('#homepage #content.content-overlay').css("margin-top", $doc_height);
-        //jQuery('.full-height').css("height", $doc_height);
-        //var picheight = jQuery('.center-y').css("height");
-        //picheight = parseInt(picheight, 10);
-        //jQuery('.center-y').css('margin-top', (($doc_height - picheight) / 2)-100);
         jQuery('.full-height .de-video-container').css("min-height", $doc_height);
 
 
@@ -1769,7 +1718,6 @@
             e.preventDefault();
             $(".d-item:hidden").slice(0, 4).slideDown();
             if ($(".d-item:hidden").length == 0) {
-                //$("#loadmore").text("No Content").addClass("noContent");
                 $("#loadmore").hide();
             }
         });
@@ -2022,11 +1970,7 @@
             } else {
                 target.css('opacity', 0);
             }
-            /* custom page with background on side
-            jQuery('.side-bg').each(function() {
-                jQuery(this).find(".image-container").css("height", jQuery(this).find(".image-container").parent().css("height"));
-            }); */
-            /* go to anchor */
+
             jQuery('#mainmenu li a').each(function () {
                 var cur = jQuery(this);
                 if (this.href.indexOf('#') != -1) {
