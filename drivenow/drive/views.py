@@ -36,6 +36,10 @@ def orders(request):
 def favorite(request):
     return render(request, 'account-favorite.html')
 
+def logout(request):
+    del request.session["username"]
+    return redirect('login')
+
 class RegisterView(generics.CreateAPIView):
     serializer_class = PersonSerializer
     renderer_classes = [TemplateHTMLRenderer]
@@ -54,14 +58,15 @@ class RegisterView(generics.CreateAPIView):
             return redirect("login")
         messages.error(request, serializer.errors["non_field_errors"][0])
         return render(request, self.template_name)
-    
+
+
 class LoginView(generics.GenericAPIView):
     serializer_class = LoginSerializer
     renderer_classes = [TemplateHTMLRenderer]
     template_name = "login.html"
 
     def get(self, request, *args, **kwargs):
-        if "username" not in request.session:
+        if "username" in request.session:
             return redirect("index")
         return render(request, self.template_name)
 
