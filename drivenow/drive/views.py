@@ -21,6 +21,9 @@ def about(request):
 def cars(request):
     return render(request, 'cars.html')
 
+def single_car(request):
+    return render(request, 'single.html')
+
 def quick_booking(request):
     return render(request, 'quick-booking.html')
 
