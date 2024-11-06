@@ -26,6 +26,7 @@
                             <div class="p-4 rounded-3 shadow-soft" data-bgcolor="#ffffff">
 
                                 <form name="contactForm" id='contact_form' method="post">
+                                {% csrf_token %}
                                     <div id="step-1" class="row">
                                         <div class="col-lg-6 mb30">
                                             <h5>What is your vehicle type?</h5>
